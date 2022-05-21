@@ -72,10 +72,10 @@
 } */
 
 .place .flag {
-  background: #3c3c3b;
   width: 9vh;
   height: 9vh;
   border-radius: 50%;
+  border: none;
 }
 
 .place .place-local-time {

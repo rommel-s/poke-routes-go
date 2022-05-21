@@ -11,8 +11,9 @@ function createElementsDynamically() {
     let place = document.createElement("div");
     place.className = "place";
 
-    let flag = document.createElement("div");
+    let flag = document.createElement("img");
     flag.className = "flag";
+    flag.setAttribute("src", location.place_flag)
     // flag.append(`<img src="${location.place_flag}" />`)
 
     let mainInformations = document.createElement("section");
