@@ -14,7 +14,6 @@ function createElementsDynamically() {
     let flag = document.createElement("img");
     flag.className = "flag";
     flag.setAttribute("src", location.place_flag)
-    // flag.append(`<img src="${location.place_flag}" />`)
 
     let mainInformations = document.createElement("section");
     mainInformations.className = "main-information";
@@ -43,12 +42,14 @@ function createElementsDynamically() {
   });
 }
 
-window.addEventListener("load", createElementsDynamically);
-
-// import {DateTime} from "./luxon.js"
+window.addEventListener("load", () => {
+  createElementsDynamically();
+  userResponse();
+});
 
 function getTimeNow() {
   const localTime = DateTime.now();
+
   document.getElementById("time").innerHTML = localTime.toFormat("HH:mm:ss");
 }
 
@@ -56,6 +57,7 @@ function setAllTimezones() {
   const locations = document.querySelectorAll("div.place section");
 
   locations.forEach((location) => {
+
     let setLocalTime = location.querySelector("p");
     let getLocationTimezone = location.getAttribute("data-timezone");
 
@@ -69,12 +71,34 @@ function setAllTimezones() {
   });
 }
 
+function userResponse() {
+  const coordButton = document.querySelectorAll(".coord-btn")
+
+  coordButton.forEach((btn) => {
+    btn.addEventListener('click', () => {
+
+      btn.innerHTML = "Copiado!"
+      btn.style.backgroundColor = '#075f81';
+
+      setTimeout(() => {
+
+        btn.innerHTML = "Copiar Coordenada";
+        btn.style.backgroundColor = '#1197cc';
+
+      }, 5000)
+    })
+  })
+}
+
 setInterval(() => {
+
   getTimeNow();
   setAllTimezones();
+
 }, 500);
 
 window.addEventListener("scroll", () => {
   const localTimeContainer = document.querySelector("header");
+
   localTimeContainer.classList.toggle("sticky", window.scrollY > 0);
 });

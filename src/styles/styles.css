@@ -98,7 +98,6 @@
 }
 
 .coord-btn {
-  /* padding: 1rem 3rem; */
   width: 60vw;
   max-width: 260px;
   line-height: 1px;
@@ -109,11 +108,6 @@
   color: #ffffff;
   border-radius: 5px;
   font-size: 1rem;
-  transition: transform 200ms;
+  /* transition: transform 200ms, background-color 200ms; */
   text-size-adjust: inherit;
-}
-
-button:active {
-  transform: translateY(2px) translateX(2px);
-  
 }
