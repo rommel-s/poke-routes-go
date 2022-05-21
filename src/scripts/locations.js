@@ -45,7 +45,7 @@ const locationsContainers = [
     place_name: "Sao Luís, MA",
     place_coordinate: "-2.528911,-44.305637",
     place_timezone: "America/Fortaleza",
-    place_flag: "./public/flags/./public/flags/brazil.svg.svg"
+    place_flag: "./public/flags/brazil.svg"
   },
   {
     place_name: "Las Palmas, Ilhas Canárias",
