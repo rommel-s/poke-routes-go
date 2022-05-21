@@ -98,12 +98,22 @@
 }
 
 .coord-btn {
-  width: 260px;
+  /* padding: 1rem 3rem; */
+  width: 60vw;
+  max-width: 260px;
+  line-height: 1px;
   height: 35px;
   margin-top: 0.5rem;
-  background-color: #009fe3;
+  background-color: #1197cc;
   border: none;
   color: #ffffff;
   border-radius: 5px;
   font-size: 1rem;
+  transition: transform 200ms;
+  text-size-adjust: inherit;
+}
+
+button:active {
+  transform: translateY(2px) translateX(2px);
+  
 }
