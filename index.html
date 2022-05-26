@@ -2,13 +2,21 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#1197cc" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./src/styles/styles.css" />
-    <link
+    <!-- <link
       href="https://unpkg.com/@primer/css@^19.0.0/dist/primer.css"
       rel="stylesheet"
+    /> -->
+    <link
+      rel="shortcut icon"
+      href="./public/icons/favicon.png"
+      type="image/x-icon"
     />
-    <title></title>
+    <link rel="apple-touch-icon" href="./public/icons/192x192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <title>PokéRoutes GO</title>
   </head>
   <body>
     <header class="local-time">
@@ -17,10 +25,15 @@
     </header>
 
     <div id="main-container" class="main-container"></div>
+    <div id="snackbar">
+      Uma nova versão do app está disponível. Clique
+      <a id="reload">aqui</a> para atualizar.
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
     <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
     <script type="module" src="./src/scripts/main.js"></script>
     <script type="module" src="./src/scripts/locations.js"></script>
+    <script src="./src/scripts/sw/registration.js"></script>
   </body>
 </html>

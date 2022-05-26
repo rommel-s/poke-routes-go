@@ -102,3 +102,4 @@ window.addEventListener("scroll", () => {
 
   localTimeContainer.classList.toggle("sticky", window.scrollY > 0);
 });
+
