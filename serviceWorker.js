@@ -5,6 +5,7 @@ self.addEventListener("install", e => {
         "/",
         "./src/scripts/main.js",
         "./src/scripts/locations.js",
+        "./src/scripts/sw/registration.js",
         "./src/styles/styles.css",
         "./public/icons/144x144.png",
         "./public/icons/192x192.png",

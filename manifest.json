@@ -1,7 +1,7 @@
 {
   "name": "PokeRoutes",
   "short_name": "PokéRoutes GO",
-  "start_url": "/",
+  "start_url": ".",
   "background_color": "#0D3AB0",
   "theme_color": "#0D3AB0",
   "display": "standalone",
