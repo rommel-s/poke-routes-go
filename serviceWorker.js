@@ -2,10 +2,9 @@ self.addEventListener("install", e => {
   e.waitUntil(
     caches.open("pokeroutes-cache").then(cache => {
       return cache.addAll([
-        "/",
+        "./",
         "./src/scripts/main.js",
         "./src/scripts/locations.js",
-        "./src/scripts/sw/registration.js",
         "./src/styles/styles.css",
         "./public/icons/144x144.png",
         "./public/icons/192x192.png",
